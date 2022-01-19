@@ -1,43 +1,39 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import { BrowserRouter, Link, Routes, Route } from 'react-router-dom'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
+    <BrowserRouter basename="app">
+      <nav style={{display: 'flex', gap: 8, padding: 8}}>
+        <Link to="/">Home</Link>
+        <Link to="/settings">Settings Page</Link><br/>
+      </nav>
+      <Routes>
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="settings" element={<SettingsPage/>}/>
+      </Routes>
+    </BrowserRouter>
+  )
+}
+
+function SettingsPage() {
+  return(
+    <div>
+      <h1>Settings Page</h1>
+      <ul>
+        <li>My profile</li>
+        <li>Music</li>
+        <li>About</li>
+      </ul>
+    </div>
+  )
+}
+
+function HomePage() {
+  return(
+    <div style={{padding: 8}}>
+      <h1>React TS Home</h1>
+      <p>Welcome to the homepage</p>
     </div>
   )
 }
