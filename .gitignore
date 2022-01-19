@@ -38,3 +38,4 @@ npm-debug.log
 .vscode
 .idea
 .DS_Store
+.elixir_ls

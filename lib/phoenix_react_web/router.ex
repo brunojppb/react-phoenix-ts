@@ -20,6 +20,11 @@ defmodule PhoenixReactWeb.Router do
     get "/", PageController, :index
   end
 
+  scope "/app", PhoenixReactWeb do
+    get "/", WebappController, :index
+    get "/*path", WebappController, :index
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", PhoenixReactWeb do
   #   pipe_through :api
