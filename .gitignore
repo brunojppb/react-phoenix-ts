@@ -32,6 +32,9 @@ phoenix_react-*.tar
 npm-debug.log
 /assets/node_modules/
 
+# Webapp production build
+/priv/static/webapp/*
+
 .vscode
 .idea
 .DS_Store
