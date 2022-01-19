@@ -1,6 +1,13 @@
-import { BrowserRouter, Link, Routes, Route } from 'react-router-dom'
+import { useEffect } from 'react';
+import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
 
 function App() {
+
+  useEffect(() => {
+    if (window.location.pathname === '/') {
+      window.location.replace('/app');
+    }
+  }, []);
 
   return (
     <BrowserRouter basename="app">
@@ -13,7 +20,7 @@ function App() {
         <Route path="settings" element={<SettingsPage/>}/>
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
 function SettingsPage() {
@@ -26,7 +33,7 @@ function SettingsPage() {
         <li>About</li>
       </ul>
     </div>
-  )
+  );
 }
 
 function HomePage() {
@@ -35,7 +42,7 @@ function HomePage() {
       <h1>React TS Home</h1>
       <p>Welcome to the homepage</p>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
