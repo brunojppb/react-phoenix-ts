@@ -1,6 +1,6 @@
 # React 🤝 Phoenix 🤝 TypeScript
 
-A Phoenix framework app with React and TypeScript as its frontend.
+A [Phoenix framework](https://www.phoenixframework.org/) app with [React](https://reactjs.org/) and [TypeScript](https://www.typescriptlang.org/) as its frontend.
 
 ## Phoenix Backend
 
