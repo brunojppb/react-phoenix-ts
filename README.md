@@ -1,6 +1,6 @@
-# Phoenix-react-ts
+# React 🤝 Phoenix 🤝 TypeScript
 
-A Phoenix framework project with React and TypeScript as its frontend.
+A Phoenix framework app with React and TypeScript as its frontend.
 
 ## Phoenix Backend
 
