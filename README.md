@@ -19,3 +19,9 @@ For developing the frontend:
 * Start the dev server with `npm run dev`
 
 Now you can visit [`localhost:3000`](http://localhost:3000) from your browser.
+
+## Read More
+
+To understand how the entire setup works, [read this detailed blogpost](https://bpaulino.com/entries/modern-webapps-with-elixir-phoenix-typescript-react) I wrote explaining it in detail.
+
+![Blogpost cover](/assets/images/posts/elixir-phoenix-typescript-react.jpg)
