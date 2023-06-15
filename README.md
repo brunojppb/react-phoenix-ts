@@ -22,6 +22,6 @@ Now you can visit [`localhost:3000`](http://localhost:3000) from your browser.
 
 ## Read More
 
-To understand how the entire setup works, [read this detailed blogpost](https://bpaulino.com/entries/modern-webapps-with-elixir-phoenix-typescript-react) I wrote explaining it in detail.
+To understand how the entire setup works, [read this detailed blogpost](https://bpaulino.com/entries/modern-webapps-with-elixir-phoenix-typescript-react) where I explain it in detail.
 
 [![Blogpost cover](https://bpaulino.com/assets/images/posts/elixir-phoenix-typescript-react.jpg)](https://bpaulino.com/entries/modern-webapps-with-elixir-phoenix-typescript-react)
