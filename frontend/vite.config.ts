@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -10,13 +10,14 @@ export default defineConfig({
   // In production, our Phoenix and React apps are served from the same
   // domain and port, which makes this configuration unecessary.
   server: {
+    port: 3000,
     proxy: {
-      '/api': {
-        target: 'http://localhost:4000',
+      "/api": {
+        target: "http://localhost:4000",
         secure: false,
         ws: true,
       },
-    }
+    },
   },
   // using the `webapp` base path for production builds
   // So we can leverage Phoenix static assets plug to deliver
@@ -25,5 +26,5 @@ export default defineConfig({
   // NOTE: Remember to move the frontend build files to the
   // `priv` folder during the application build process in CI
   // @ts-ignore
-  base: process.env.NODE_ENV === 'production' ? '/webapp/' : '/',
-})
+  base: process.env.NODE_ENV === "production" ? "/webapp/" : "/",
+});
