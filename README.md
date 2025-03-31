@@ -3,7 +3,7 @@
 A [Phoenix framework](https://www.phoenixframework.org/) app with [React](https://reactjs.org/) and [TypeScript](https://www.typescriptlang.org/) as its frontend.
 
 > [!NOTE]  
-> **This repo is archived, but the philosophy here still stands. If you want replicate this setup on any Web framework, [give my blogpost a read here](https://bpaulino.com/entries/modern-webapps-with-elixir-phoenix-typescript-react).**
+> **This repo is archived, but the philosophy here still stands. If you want to replicate this setup on any Web framework, [give my blogpost a read here](https://bpaulino.com/entries/modern-webapps-with-elixir-phoenix-typescript-react).**
 
 ## Phoenix Backend
 
